@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import BookingInfoPage from './containers/BookingInfoPage';
 import WeekViewPage from './containers/WeekViewPage';
 import WeekViewProvider from './containers/WeekViewPage/WeekViewProvider';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <WeekViewPage />,
